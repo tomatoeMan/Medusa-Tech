@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Medusa Tech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta property="og:image" content="https://your-website-preview.co.za/img/logo3.png" />
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+  <style>
+    .off
+    {
+        opacity:0;
+        font-size:20px;
+    }
+
+    .h1HeaderF
+    {
+        opacity:1;
+        animation-name:h1HeadF;
+        animation-duration:2s;
+        animation-timing-function: ease-in-out;
+        font-size:20px;
+        color: #00fff7;
+        width:100%;
+    }
+    .p1HeaderF
+    {
+        opacity:1;
+        animation-name:p1HeadF;
+        animation-duration:2s;
+        animation-timing-function: ease-in-out;
+        font-size:12px;
+        float:right;
+        width:100%;
+        color: #888;
+    }
+    @keyframes h1HeadF
+    {
+        from 
+        {
+            opacity:0;
+            font-size:0px;
+            
+        }
+        to
+        {
+            opacity:1;
+            font-size:20px;
+           
+        }
+    }
+    @keyframes p1HeadF
+    {
+        from 
+        {
+            opacity:0;
+
+        
+            
+        }
+        to
+        {
+            opacity:1;
+          
+          
+        }
+    }
+
+    .h1Header
+    {
+        opacity:1;
+        animation-name:h1Head;
+        animation-duration:2s;
+        animation-timing-function: ease-in-out;
+        font-size:50px;
+        color: #00fff7;
+        width:100%;
+    }
+    .p1Header
+    {
+        opacity:1;
+        animation-name:p1Head;
+        animation-duration:2s;
+        animation-timing-function: ease-in-out;
+        font-size:20px;
+        float:right;
+        width:100%;
+        color: #888;
+    }
+    @keyframes h1Head 
+    {
+        from 
+        {
+            opacity:0;
+            font-size:0px;
+            width:0%;
+        }
+        to
+        {
+            opacity:1;
+            font-size:50px;
+            width:100%;
+        }
+    }
+    @keyframes p1Head 
+    {
+        from 
+        {
+            opacity:0;
+            font-size:0px;
+            width:0%;
+            
+        }
+        to
+        {
+            opacity:1;
+            font-size:20px;
+            width:100%;
+        }
+    }
+    .box1
+    {
+        background-color: #00fff700;
+        border-radius:20px;
+        padding:3px;
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        z-index:1;
+        overflow: hidden;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box2
+    {
+        background-color: black;
+        border-radius:20px;
+        position:relative;
+        z-index:1;
+        width:100%;
+        
+    }
+    .box1:before
+    {
+        content: "";
+        background-image: linear-gradient(rgb(0, 0, 0)10%,black,rgb(0, 255, 247),rgba(0, 0, 0, 0) 90%);
+        display:block;
+        height:100%;
+        width:100%;
+        border-radius:20px;
+        position: absolute;
+        animation: rotate 5s linear forwards infinite, fadeIn 1s ease-in;
+        
+    }
+    .l1
+    {
+        animation-name:label1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+    }
+    .l2
+    {
+        animation-name:label2;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        font-size:2.5rem;
+    }
+    .l3
+    {
+        animation-name:label3;
+        animation-timing-function: ease-in-out;
+        animation-duration: 2s;
+        font-size:2.5rem;
+        opacity:1;
+    }
+    .div1
+    {
+        height:80px;
+    }
+    @keyframes label3
+    {
+        0%
+        {
+            font-size:2.5rem;
+        }
+        50% 
+        {
+         
+            font-size:3.5rem;
+            
+        }
+        100%
+        {
+            font-size:2.5rem;
+        }
+    }
+    @keyframes label2
+    {
+        0%
+        {
+            font-size:2.5rem;
+        }
+        50% 
+        {
+            font-size:4rem;
+        }
+        100%
+        {
+            font-size:2.5rem;
+        }
+    }
+    @keyframes label1
+    {
+        0%
+        {
+            font-size:2.5rem;
+            
+        }
+        50%
+        {
+            font-size:3.5rem;
+        }
+        100%
+        {
+            font-size:2.5rem;
+        }
+    }
+    @keyframes fadeIn 
+    {
+        from 
+        {
+            opacity: 0;
+        }
+        to
+        {
+            opacity: 1;
+        }
+    }
+    @keyframes rotate 
+    {
+        from 
+        {
+            rotate:0deg;
+           
+        }
+        to
+        {
+            rotate:360deg;
+            
+        }
+    }
+    @media only screen and (max-width: 800px)
+    {
+       
+        .div1
+        {
+            height:350px;
+            display:flex;
+            justify-content: center;
+        }
+        .off
+        {
+            opacity:0;
+            font-size:20px;
+        }
+        .h1Header
+        {
+            opacity:1;
+            animation-name:h1Head;
+            animation-duration:2s;
+            animation-timing-function: ease-in-out;
+            font-size:45px;
+            color: #00fff7;
+            width:100%;
+        }
+        .p1Header
+        {
+            opacity:1;
+            animation-name:p1Head;
+            animation-duration:2s;
+            animation-timing-function: ease-in-out;
+            font-size:12px;
+            float:right;
+            width:100%;
+            color: #888;
+        }
+        @keyframes h1Head 
+        {
+            from 
+            {
+                opacity:0;
+                font-size:0px;
+                width:0%;
+            }
+            to
+            {
+                opacity:1;
+                font-size:45px;
+                width:100%;
+            }
+        }
+        @keyframes p1Head 
+        {
+            from 
+            {
+                opacity:0;
+                font-size:0px;
+                width:0%;
+                
+            }
+            to
+            {
+                opacity:1;
+                font-size:12px;
+                width:100%;
+            }
+        }
+        .box1
+        {
+            background-color: #00fff700;
+            border-radius:12px;
+            padding:3px;
+            width:95%;
+            margin-left:auto;
+            margin-right:auto;
+            position:relative;
+            z-index:1;
+            overflow: hidden;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2
+        {
+            background-color: black;
+            border-radius:12px;
+            position:relative;
+            z-index:1;
+            width:100%;
+            
+        }
+        .box1:before
+        {
+            content: "";
+            background-image: linear-gradient(rgb(0, 0, 0)30%,black,rgb(0, 255, 247),rgba(0, 0, 0, 0) 70%);
+            display:block;
+            height:100%;
+            width:100%;
+            border-radius:12px;
+            position: absolute;
+            animation: rotate 3s linear forwards infinite, fadeIn 1s ease-in;
+            
+        }
+        @keyframes fadeIn 
+        {
+            from 
+            {
+                opacity: 0;
+            }
+            to
+            {
+                opacity: 1;
+            }
+        }
+        @keyframes rotate 
+        {
+            from 
+            {
+                rotate:0deg;
+              
+            }
+            to
+            {
+                rotate:360deg;
+                
+            }
+        }
+    }
+  </style>
+  <header>
+    <div style="padding:3px;" id="box1">
+      <div id="box2">
+          <h1 id="h1Heading">Medusa Tech</h1>
+      </div>
+    </div>
+    <p class ="off" id="pHeading">Turning code to stone with cutting-edge tech solutions</p>
+  </header>
+
+  <nav>
+    <a href="https://your-website-preview.co.za/">Home</a>
+    <a href="https://your-website-preview.co.za/Medusa_about">About</a>
+    <a href="https://your-website-preview.co.za/Medusa_services">Services</a>
+    <a href="https://your-website-preview.co.za/Medusa_contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+     
+        <h2>
+            <label id="l1">U</label><label id="l2">n</label><label id="l3">l</label><label id="l4">e</label><label id="l5">a</label><label id="l6">s</label><label id="l7">h</label> the <label id="l8">Power</label> of <label id="l9">Innovation</label></h2>
+    
+    <p>At Medusa Tech, we specialize in crafting high-impact digital experiences for bold brands and fearless founders. Websites, logo's and Marketing</p>
+    <div class="cta">
+      <a href="https://wa.me/+27670242803">Start Your Project</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Medusa Tech. All rights reserved.
+  </footer>
+</body>
+<script src="demo.js"></script>
+</html>
